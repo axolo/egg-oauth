@@ -1,6 +1,6 @@
 {
   "name": "@axolo/egg-oauth",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "OAuth2 server plugin for Egg.js.",
   "eggPlugin": {
     "name": "oauth"
@@ -41,10 +41,8 @@
     "autod": "autod"
   },
   "files": [
-    "app.js",
-    "agent.js",
     "config",
-    "app",
+    "app.js",
     "lib"
   ],
   "ci": {

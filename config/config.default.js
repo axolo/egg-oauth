@@ -11,8 +11,9 @@
  */
 exports.oauth = {
   default: {
+    OAuth2Server: require('oauth2-server'), // change version fit your app
     model: './app/extend/oauth', // relative path from app.baseDir
-    allowBearerTokensInQueryString: true,
+    allowBearerTokensInQueryString: true, // querystring params: access_token
   },
-  // client: {},
+  // client: {},  // Please config `client` or `clients` in Egg.js
 };

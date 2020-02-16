@@ -24,8 +24,8 @@ exports.oauth = {
 // {app_root}/config/config.default.js
 exports.oauth = {
   client: {
-    model: './mock/oauth/model', // default: './app/extend/oauth'
-    accessTokenLifetime: 7200, // default: 3600
+    model: './mock/oauth/model', // default './app/extend/oauth'
+    accessTokenLifetime: 7200, // default 3600
     requireClientAuthentication: { password: false },
   },
 };
