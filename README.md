@@ -31,6 +31,8 @@ exports.oauth = {
 };
 ```
 
+**MUST** build [OAuth2 Model Specification][Model] at model in config by yourselves.
+
 see [config/config.default.js](config/config.default.js) for more detail.
 
 ## Questions & Suggestions
@@ -40,3 +42,5 @@ Please open an issue [here](https://github.com/axolo/egg-oauth/issues).
 ## License
 
 [MIT](LICENSE)
+
+[Model]: https://oauth2-server.readthedocs.io/en/latest/model/overview.html

@@ -30,6 +30,8 @@ exports.oauth = {
 };
 ```
 
+**必须**在配置中指定的`model`中自行实现[OAuth2 Model Specification][Model]。
+
 请到 [config/config.default.js](config/config.default.js) 查看详细配置项说明。
 
 ## 提问交流
@@ -39,3 +41,5 @@ exports.oauth = {
 ## License
 
 [MIT](LICENSE)
+
+[Model]: https://oauth2-server.readthedocs.io/en/latest/model/overview.html
