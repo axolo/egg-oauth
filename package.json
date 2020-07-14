@@ -40,20 +40,19 @@
   },
   "files": [
     "config",
-    "app.js",
-    "lib"
+    "app.js"
   ],
   "ci": {
     "version": "8, 10"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-oauth.git"
+    "url": "git+https://github.com/axolo/egg-oauth.git"
   },
   "bugs": {
-    "url": "https://github.com/eggjs/egg/issues"
+    "url": "https://github.com/axolo/egg-oauth/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-oauth#readme",
+  "homepage": "https://github.com/axolo/egg-oauth#readme",
   "author": "Yueming Fang",
   "license": "MIT"
 }
