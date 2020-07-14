@@ -35,6 +35,10 @@ exports.oauth = {
 
 see [config/config.default.js](config/config.default.js) for more detail.
 
+## OAuth2Server
+
+`this.app.oauth.OAuth2Server` is the class of `OAuth2Server`.
+
 ## Questions & Suggestions
 
 Please open an issue [here](https://github.com/axolo/egg-oauth/issues).

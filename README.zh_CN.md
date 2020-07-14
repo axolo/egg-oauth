@@ -34,6 +34,10 @@ exports.oauth = {
 
 请到 [config/config.default.js](config/config.default.js) 查看详细配置项说明。
 
+## OAuth2Server
+
+`this.app.oauth.OAuth2Server` 即 `OAuth2Server` 类。
+
 ## 提问交流
 
 请到 [egg issues](https://github.com/axolo/egg-oauth/issues) 异步交流。

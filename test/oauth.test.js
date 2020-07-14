@@ -2,11 +2,11 @@
 
 const mock = require('egg-mock');
 
-describe('test/@axolo/egg-oauth.test.js', () => {
+describe('test/oauth.test.js', () => {
   let app;
   before(() => {
     app = mock.app({
-      baseDir: 'apps/@axolo/egg-oauth-test',
+      baseDir: 'apps/oauth-test',
     });
     return app.ready();
   });
