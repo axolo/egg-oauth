@@ -34,6 +34,24 @@ exports.oauth = {
 
 请到 [config/config.default.js](config/config.default.js) 查看详细配置项说明。
 
+## model
+
+`model`样例
+
+```js
+class Model {
+  constructor(options, app) {
+    this.options = options;
+    this.app = app;
+  }
+
+  async getClient(clientId, clientSecret) {
+    return { clientId, clientSecret };
+  }
+
+  // ...
+}
+
 ## OAuth2Server
 
 `this.app.oauth.OAuth2Server` 即 `OAuth2Server` 类。

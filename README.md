@@ -39,6 +39,27 @@ see [config/config.default.js](config/config.default.js) for more detail.
 
 `this.app.oauth.OAuth2Server` is the class of `OAuth2Server`.
 
+## model
+
+A example of model.
+
+```js
+class Model {
+  constructor(options, app) {
+    this.options = options;
+    this.app = app;
+  }
+
+  async getClient(clientId, clientSecret) {
+    return { clientId, clientSecret };
+  }
+
+  // ...
+}
+
+module.exports = Model;
+```
+
 ## Questions & Suggestions
 
 Please open an issue [here](https://github.com/axolo/egg-oauth/issues).
