@@ -52,6 +52,9 @@ class Model {
   // ...
 }
 
+module.exports = (options, app) => new Model(options, app);
+```
+
 ## OAuth2Server
 
 `this.app.oauth.OAuth2Server` 即 `OAuth2Server` 类。

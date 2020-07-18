@@ -57,7 +57,7 @@ class Model {
   // ...
 }
 
-module.exports = Model;
+module.exports = (options, app) => new Model(options, app);
 ```
 
 ## Questions & Suggestions
