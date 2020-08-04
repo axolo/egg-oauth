@@ -3,9 +3,15 @@
 const OAuth2Server = require('oauth2-server');
 
 /**
- * egg-oauth default config
+ * **egg-oauth default config**
+ *
+ * @see https://oauth2-server.readthedocs.io
  * @member Config#oauth
- * @property {String} SOME_KEY - some description
+ * @property {Object} OAuth2Server class OAuth2Server
+ * @property {String | Object} model OAuth2Server model Object or path
+ * @property {Boolean} allowBearerTokensInQueryString see docs
+ * @property {Number} accessTokenLifetime see docs
+ * @property {Number} refreshTokenLifetime see docs
  */
 exports.oauth = {
   default: {

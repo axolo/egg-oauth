@@ -24,7 +24,6 @@ exports.oauth = {
 // {app_root}/config/config.default.js
 exports.oauth = {
   client: {
-    model: './mock/oauth/model', // default './app/extend/oauth'
     accessTokenLifetime: 7200, // default 3600
     requireClientAuthentication: { password: false },
   },
@@ -44,6 +43,7 @@ see [config/config.default.js](config/config.default.js) for more detail.
 A example of model.
 
 ```js
+// app/extend/oauth.js
 class Model {
   constructor(options, app) {
     this.options = options;
@@ -57,8 +57,12 @@ class Model {
   // ...
 }
 
-module.exports = (options, app) => new Model(options, app);
+module.exports = Model;
 ```
+
+## TODO
+
+- get `request` in `model`
 
 ## Questions & Suggestions
 

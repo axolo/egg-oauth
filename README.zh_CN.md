@@ -34,11 +34,16 @@ exports.oauth = {
 
 请到 [config/config.default.js](config/config.default.js) 查看详细配置项说明。
 
+## OAuth2Server
+
+`this.app.oauth.OAuth2Server` 即 `OAuth2Server` 类。
+
 ## model
 
 `model`样例
 
 ```js
+// app/extend/oauth.js
 class Model {
   constructor(options, app) {
     this.options = options;
@@ -52,12 +57,12 @@ class Model {
   // ...
 }
 
-module.exports = (options, app) => new Model(options, app);
+module.exports = Model;
 ```
 
-## OAuth2Server
+## TODO
 
-`this.app.oauth.OAuth2Server` 即 `OAuth2Server` 类。
+- 在`model`中获取`request`
 
 ## 提问交流
 
