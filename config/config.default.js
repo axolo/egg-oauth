@@ -3,7 +3,7 @@
 const OAuth2Server = require('oauth2-server');
 
 /**
- * **egg-oauth default config**
+ * **egg-oauth config**
  *
  * @see https://oauth2-server.readthedocs.io
  * @member Config#oauth
@@ -18,9 +18,15 @@ exports.oauth = {
     OAuth2Server, // change version to fit your app
     model: './app/extend/oauth', // relative path from app.baseDir
     allowBearerTokensInQueryString: true, // querystring params: access_token
-    accessTokenLifetime: 3600, // 2 hours
+    accessTokenLifetime: 3600, // 1 hours
     refreshTokenLifetime: 1209600, // 2 weeks
     // authorizationCodeLifetime: 300, // 5 minutes
     // allowEmptyState: false, // state required
+    // defaultScopes: 'default', // multiple split with space
+    // requireClientAuthentication: {
+    //   password: false,
+    //   authorization_code: false,
+    //   refresh_token: false,
+    // },
   },
 };

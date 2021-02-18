@@ -34,9 +34,13 @@ exports.oauth = {
 
 请到 [config/config.default.js](config/config.default.js) 查看详细配置项说明。
 
-## OAuth2Server
+## 成员
 
-`this.app.oauth.OAuth2Server` 即 `OAuth2Server` 类。
+|     成员     |           说明            |
+| ------------ | ------------------------- |
+| OAuth2Server | `OAuth2Server`类          |
+| Response     | `OAuth2Server.Response`类 |
+| Request      | `OAuth2Server.Request`类  |
 
 ## model
 

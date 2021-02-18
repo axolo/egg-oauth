@@ -9,8 +9,10 @@ const createOauth = (options, app) => {
     const model = new Model({ ...options }, app);
     options.model = model;
   }
-  const oauth = new OAuth2Server(options, app);
+  const oauth = new OAuth2Server(options);
   oauth.OAuth2Server = OAuth2Server;
+  oauth.Request = OAuth2Server.Request;
+  oauth.Response = OAuth2Server.Response;
   return oauth;
 };
 

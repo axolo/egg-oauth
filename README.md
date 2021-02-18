@@ -25,7 +25,9 @@ exports.oauth = {
 exports.oauth = {
   client: {
     accessTokenLifetime: 7200, // default 3600
-    requireClientAuthentication: { password: false },
+    requireClientAuthentication: {
+      password: false,
+    },
   },
 };
 ```
@@ -34,9 +36,13 @@ exports.oauth = {
 
 see [config/config.default.js](config/config.default.js) for more detail.
 
-## OAuth2Server
+## props
 
-`this.app.oauth.OAuth2Server` is the class of `OAuth2Server`.
+|    props     |           description            |
+| ------------ | -------------------------------- |
+| OAuth2Server | class of `OAuth2Server`          |
+| Response     | class of `OAuth2Server.Response` |
+| Request      | class of `OAuth2Server.Request`  |
 
 ## model
 
