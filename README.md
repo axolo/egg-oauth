@@ -24,6 +24,8 @@ exports.oauth = {
 // {app_root}/config/config.default.js
 exports.oauth = {
   client: {
+    OAuth2Sever: require('oauth2-server'), // user defined oauth2-server version
+    model: require('./oauth-model'), // model require
     accessTokenLifetime: 7200, // default 3600
     requireClientAuthentication: {
       password: false,
@@ -49,21 +51,13 @@ see [config/config.default.js](config/config.default.js) for more detail.
 A example of model.
 
 ```js
-// app/extend/oauth.js
-class Model {
-  constructor(options, app) {
-    this.options = options;
-    this.app = app;
-  }
-
-  async getClient(clientId, clientSecret) {
+// app/config/oauth-model.js
+module.exports = (options, app) => ({
+  getClient: (clientId, clientSecret) => {
     return { clientId, clientSecret };
-  }
-
+  },
   // ...
-}
-
-module.exports = Model;
+});
 ```
 
 ## TODO

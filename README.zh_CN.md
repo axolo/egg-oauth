@@ -23,7 +23,8 @@ exports.oauth = {
 ```js
 exports.oauth = {
   client: {
-    model: './mock/oauth/model', // default: './app/extend/oauth'
+    OAuth2Sever: require('oauth2-server'), // user defined oauth2-server version
+    model: require('./oauth-model'), // model require
     accessTokenLifetime: 7200, // default: 3600
     requireClientAuthentication: { password: false },
   },
@@ -47,21 +48,13 @@ exports.oauth = {
 `model`样例
 
 ```js
-// app/extend/oauth.js
-class Model {
-  constructor(options, app) {
-    this.options = options;
-    this.app = app;
-  }
-
-  async getClient(clientId, clientSecret) {
+// app/config/oauth-model.js
+module.exports = (options, app) => ({
+  getClient: (clientId, clientSecret) => {
     return { clientId, clientSecret };
-  }
-
+  },
   // ...
-}
-
-module.exports = Model;
+});
 ```
 
 ## TODO
