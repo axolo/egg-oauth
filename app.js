@@ -1,7 +1,9 @@
 'use strict';
 
+const NodeOAuth2Server = require('oauth2-server');
+
 const createOauth = (options, app) => {
-  const { OAuth2Server } = options;
+  const OAuth2Server = options.OAuth2Server || NodeOAuth2Server;
   if (typeof options.model === 'function') {
     const model = options.model({ ...options }, app);
     options.model = model;

@@ -1,6 +1,6 @@
 {
   "name": "@axolo/egg-oauth",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "OAuth2 server plugin for Egg.js.",
   "eggPlugin": {
     "name": "oauth"
